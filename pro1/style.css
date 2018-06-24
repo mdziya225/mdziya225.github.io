@@ -1,4 +1,27 @@
+.card:hover{
+     box-shadow: 1px 1px 1px 1px white;
+    transition: 0.8s;
+}
+.card{
+     transition: 0.7s;
+}
+
+.bor{
+    border-color: black;
+}
+.n1{
+     background: linear-gradient(#116466,black);
+}
+
+.d1{
+    background: linear-gradient(#116466,black);
+    margin: 30px;
+    padding: 70px;
+    border-radius: 10px;
+}
+
 .bg{
+    margin-top: -20px;
   background-image: url(5.jpg);
 }
 a{
