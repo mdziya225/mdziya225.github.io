@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="This Web Page contains Five Programming Problems First is the Palindrome ,second is Fibonacci series, third is factorial,fourth is bubble sort and fifth is Find the third largest number in an array.">
+  <meta name="keywords" content="Learn Code Online Project,Palindrome Program, Fibonacci Series,Bubble Sort,find the  Factorial ,c program,java program, find the third largest number in an array">
+  <meta name="author" content="Md Ziya">
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-   
-   
-   
+   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-   
     <title>TheGeneticProgrammer</title>
 </head>
 <body>
@@ -17,17 +18,57 @@
   <div class="jumbotron jumbotron-fluid ab">
   <div class="container text-center">
     <h1>The Genetic Programmer</h1>      
-    <p>Programming is Love</p>
+    <p>LCO Project</p>
   </div>
 </div>
   
- 
+ <nav class="navbar fixed-top navbar-expand-lg mb-3 shadow n1 sticky-top" >
+
+  <a class="navbar-brand logotext text-light active" href="#">&nbsp;TheGeneticProgrammer</a>
+ <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id='bb'>
+    <span class="navbar-toggler-icon pb-5"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+    <ul class="navbar-nav justify-content-around w-100 ">
+      <li class="nav-item p-2 ">
+        <a class="nav-link  ripple  btn btn-sm btn-outline-info" onclick="f1()" >Palindrome Program <span class="sr-only">(current)</span></a>
+      </li>
+             <li class="nav-item   p-2 ">
+        <a class="nav-link ripple btn btn-sm btn-outline-info" onclick="f2()"  role="button" >
+         Fibonacci Series
+        </a>
+        
+      </li>
+             <li class="nav-item  p-2  ">
+        <a class="nav-link btn ripple  btn-sm btn-outline-info" onclick="f3()"  role="button" >
+          Factorial Number
+        </a>
+        
+      </li>
+             <li class="nav-item  p-2 ">
+        <a class="nav-link  btn ripple  btn-sm btn-outline-info" onclick="f4()"  role="button" >
+          Bubble Sort
+        </a>
+        
+      </li>
+        <li class="nav-item  p-2 ">
+        <a class="nav-link  btn  ripple btn-sm btn-outline-info" onclick="f5()"  role="button" >
+          Third Largest In An Array
+        </a>
+        
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+
 <div class="bg" ><br>
    <h2 class="text-center" style="color: white;font-weight: 900;font-size: 60px;">Some Basic Programs </h2><br>
     
 <br>
 
-    <div class="row bc">
+   <div class="d1" id="aa" > <div class="row bc">
     <div class="col-sm-6 ">
      
       
@@ -37,7 +78,7 @@
           Question #1
         </a>
       </div>
-      <div id="collapseOne" class="collapse" data-parent="#accordion">
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
         <div class="card-body qdown">
          <h3>What is Palindrome ?</h3>
         </div>
@@ -58,7 +99,7 @@
         <br>
           <h3>Definition</h3>
         A <mark>Palindrome </mark>&nbsp;is a word, number, or other sequence of characters which reads the same backward as forward, such as madam or raceca <br>
-        <h3>Algrithm</h3><br>
+        <h3>Algorithm</h3><br>
         Checking if a number is prime is a popular question for programming competitions. <br>
 
 It's also necessary when implementing software that generates private keys for RSA public-key encryption.<br>
@@ -69,43 +110,7 @@ The simplest way to check if a given number is prime (primality testing) is to s
 
 Try possible factors and see if the number can be evenly divided into any of them.<br>
 
-In C, that simple check is:<br>
 
-bool IsPrime(long int number)<br>
-
-{<br>
-
-if (number < 2) return false;<br>
-
-if (number <= 3) return true;<br>
-
-long int ns, temp;<br>
-
-for (ns = 3; ns < number; ns++)<br>
-
-{<br>
-
-temp = number / ns;<br>
-
-if (temp*ns number) <br>{<br>
-
-printf("The smallest prime factor of %li is %li .\n", number, ns );<br>
-
-printf("The product of %li * %li is %li .\n", ns, temp, number );<br>
-
-return false; //can be divided!<br>
-
-}<br>
-
-}<br>
-
-return true;<br>
-
-}<br>
-
-This can be sped up a little more by only checking primes<br> (rather than every odd number), perhaps using the sieve of Eratosthenes to find those primes.<br>
-
-Because all primes are integers, it's usually best not to use floating-point when working with them.<br>
 
 
         </div>
@@ -117,7 +122,7 @@ Because all primes are integers, it's usually best not to use floating-point whe
     </div>
        <div class="col-sm-6 wow bounceInRight">
           
-    <div class="card">
+    <div class="card bor">
       
       <div  class="card-header cu">
         <a class="card-link" data-toggle="collapse" href="#collapseThree">
@@ -157,7 +162,7 @@ int main()<br>
         </div>
       </div>
     </div>
-    <div class="card ">
+    <div class="card bor">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseFour">
             <img src="j1.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -192,8 +197,8 @@ int main()<br>
       </div>
     </div>
     </div>
-    </div><br>
-    <div class="row bc">
+       </div></div><br>
+   <div class="d1" id="ab" > <div class="row bc">
     <div class="col-sm-6 ">
      
       
@@ -203,7 +208,7 @@ int main()<br>
           Question #2
         </a>
       </div>
-      <div id="collapse9" class="collapse" data-parent="#accordion">
+      <div id="collapse9" class="collapse show" data-parent="#accordion">
         <div class="card-body qdown">
          <h3>What is Fibonacci Series ?</h3>
         </div>
@@ -245,7 +250,7 @@ End<br>
     </div>
        <div class="col-sm-6 wow bounceInRight">
           
-    <div class="card">
+    <div class="card bor">
       <div class="card-header cu">
         <a class="card-link" data-toggle="collapse" href="#collapse11">
           <img src="c.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -273,7 +278,7 @@ int main()    <br>
         </div>
       </div>
     </div>
-    <div class="card ">
+    <div class="card bor">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapse12">
           <img src="j1.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -305,8 +310,8 @@ int main()    <br>
       </div>
     </div>
     </div>
-    </div><br>
-    <div class="row bc">
+       </div></div><br>
+   <div class="d1"  id="ac"> <div class="row bc">
     <div class="col-sm-6 ">
      
       
@@ -316,7 +321,7 @@ int main()    <br>
           Question #3
         </a>
       </div>
-      <div id="collapse5" class="collapse" data-parent="#accordion">
+      <div id="collapse5" class="collapse show" data-parent="#accordion">
         <div class="card-body qdown">
            <h3>What is Factorial of Number ?</h3>
         </div>
@@ -357,7 +362,7 @@ For an integer n greater than or equal to 1, the factorial is the product of all
     </div>
        <div class="col-sm-6 wow bounceInRight">
           
-    <div class="card">
+    <div class="card bor">
       <div class="card-header cu">
         <a class="card-link" data-toggle="collapse" href="#collapse7">
           <img src="c.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -392,7 +397,7 @@ int main()<br>
         </div>
       </div>
     </div>
-    <div class="card ">
+    <div class="card bor">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapse8">
             <img src="j1.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -424,8 +429,8 @@ class Test<br>
       </div>
     </div>
     </div>
-    </div><br>
-    <div class="row bc">
+       </div></div><br>
+    <div class="d1" id="ad" ><div class="row bc">
     <div class="col-sm-6 ">
      
       
@@ -435,7 +440,7 @@ class Test<br>
           Question #4
         </a>
       </div>
-      <div id="collapse17" class="collapse" data-parent="#accordion">
+      <div id="collapse17" class="collapse show" data-parent="#accordion">
         <div class="card-body qdown">
           <h3>What is Bubble Sort ?</h3>
         </div>
@@ -455,28 +460,7 @@ class Test<br>
         <div class="card-body ddown"><br> <h3>Definition</h3>
        <mark> Bubble Sort </mark>is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. <br>
        <h4>Algorithm</h4>
-            <b>First Pass:</b> <br>
-( <b>5 1 </b>4 2 8 ) –> (<b> 1 5</b> 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1. <br>
-( 1<b> 5 4 </b>2 8 ) –>  ( 1<b> 4 5 </b>2 8 ), Swap since 5 > 4 <br>
-( 1 4 <b>5 2</b> 8 ) –>  ( 1 4<b> 2 5</b> 8 ), Swap since 5 > 2<br>
-( 1 4 2 <b>5 8 </b>) –> ( 1 4 2 <b>5 8</b> ), Now, since these elements are already in order (8 > 5), algorithm does not swap them.<br>
-
-            <b>Second Pass:</b> <br>
-( <b>1 4 </b>2 5 8 ) –> ( <b>1 4</b> 2 5 8 ) <br>
-( 1 <b>4 2</b> 5 8 ) –> ( 1 <b>2 4</b> 5 8 ), Swap since 4 > 2<br>
-( 1 2 <b>4 5 </b>8 ) –> ( 1 2 <b>4 5</b> 8 )<br>
-( 1 2 4 <b>5 8</b> ) –>  ( 1 2 4 <b>5 8</b> )<br>
-Now, the array is already sorted, but our algorithm does not know if it is completed. <br> The algorithm needs one whole pass without any swap to know it is sorted. <br>
-
-
-
- 
-
-<b>Third Pass:</b> <br>
-( <b>1 2</b> 4 5 8 ) –> ( <b>1 2 </b>4 5 8 )<br>
-( 1 <b>2 4</b> 5 8 ) –> ( 1 <b>2 4</b> 5 8 )<br>
-( 1 2 <b>4 5</b> 8 ) –> ( 1 2 <b>4 5</b> 8 )<br>
-( 1 2 4 <b>5 8 </b>) –> ( 1 2 4 <b>5 8 </b>)
+            
         </div>
       </div>
     </div>
@@ -486,7 +470,7 @@ Now, the array is already sorted, but our algorithm does not know if it is compl
     </div>
        <div class="col-sm-6 wow bounceInRight">
           
-    <div class="card">
+    <div class="card bor">
       <div class="card-header cu">
         <a class="card-link" data-toggle="collapse" href="#collapse19">
           <img src="c.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -538,7 +522,7 @@ int main()<br>
         </div>
       </div>
     </div>
-    <div class="card ">
+    <div class="card bor">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapse20">
             <img src="j1.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -586,8 +570,8 @@ class BubbleSort<br>
       </div>
     </div>
     </div>
-    </div><br>
-    <div class="row bc">
+        </div></div><br>
+   <div class="d1" id="ae" > <div class="row bc">
     <div class="col-sm-6 ">
      
       
@@ -597,7 +581,7 @@ class BubbleSort<br>
           Question #5
         </a>
       </div>
-      <div id="collapse21" class="collapse" data-parent="#accordion">
+      <div id="collapse21" class="collapse show" data-parent="#accordion">
         <div class="card-body qdown">
         <h3>Find largest of third number</h3> 
         </div>
@@ -628,7 +612,7 @@ If the array does not contain unique values, <br>then you can still sort the arr
     </div>
        <div class="col-sm-6 wow bounceInRight">
           
-    <div class="card">
+    <div class="card bor">
       <div class="card-header cu">
         <a class="card-link" data-toggle="collapse" href="#collapse23">
           <img src="c.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -674,7 +658,7 @@ getch( );<br>
         </div>
       </div>
     </div>
-    <div class="card ">
+    <div class="card bor">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapse24">
             <img src="j1.png" width="50" height="50" class="d-inline-block align-top " alt="">
@@ -716,7 +700,7 @@ class GFG<br>
       </div>
     </div>
     </div>
-    </div>
+       </div></div>
     <br>
     </div>
     
@@ -740,4 +724,40 @@ class GFG<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script>
+    function f1(){
+    var elmnt = document.getElementById("aa");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+		if(window.innerWidth<980){
+	document.getElementById("bb").click();
+			
+		var elmnt = document.getElementById("cc");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+		}
+}
+function f2(){
+    var elmnt = document.getElementById("ab");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+	if(window.innerWidth<980)
+	document.getElementById("bb").click();
+	
+}
+function f3(){
+    var elmnt = document.getElementById("ac");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+	if(window.innerWidth<980)
+	document.getElementById("bb").click();
+}
+function f4(){
+    var elmnt = document.getElementById("ad");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+	if(window.innerWidth<980)
+	document.getElementById("bb").click();
+}
+function f5(){
+    var elmnt = document.getElementById("ae");	
+    elmnt.scrollIntoView({ behavior:'smooth'});
+		if(window.innerWidth<980)
+	document.getElementById("bb").click();
+}</script>
 </html>
