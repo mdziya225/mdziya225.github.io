@@ -54,9 +54,59 @@
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
         <div class="card-body ddown">
-        
-         <h4>Palindrome</h4>
-        A <mark>Palindrome </mark>&nbsp;is a word, number, or other sequence of characters which reads the same backward as forward, such as madam or raceca
+        <br>
+          <h3>Definition</h3>
+        A <mark>Palindrome </mark>&nbsp;is a word, number, or other sequence of characters which reads the same backward as forward, such as madam or raceca <br>
+        <h3>Algrithm</h3><br>
+        Checking if a number is prime is a popular question for programming competitions. <br>
+
+It's also necessary when implementing software that generates private keys for RSA public-key encryption.<br>
+
+There are several formulas for computing the prime numbers <br>such as Willans' Formulas and Wormell's Formula.<br> These two are used to generate a prime number.<br>
+
+The simplest way to check if a given number is prime (primality testing) is to search for a factor.<br>
+
+Try possible factors and see if the number can be evenly divided into any of them.<br>
+
+In C, that simple check is:<br>
+
+bool IsPrime(long int number)<br>
+
+{<br>
+
+if (number < 2) return false;<br>
+
+if (number <= 3) return true;<br>
+
+long int ns, temp;<br>
+
+for (ns = 3; ns < number; ns++)<br>
+
+{<br>
+
+temp = number / ns;<br>
+
+if (temp*ns number) <br>{<br>
+
+printf("The smallest prime factor of %li is %li .\n", number, ns );<br>
+
+printf("The product of %li * %li is %li .\n", ns, temp, number );<br>
+
+return false; //can be divided!<br>
+
+}<br>
+
+}<br>
+
+return true;<br>
+
+}<br>
+
+This can be sped up a little more by only checking primes<br> (rather than every odd number), perhaps using the sieve of Eratosthenes to find those primes.<br>
+
+Because all primes are integers, it's usually best not to use floating-point when working with them.<br>
+
+
         </div>
       </div>
     </div>
@@ -169,9 +219,22 @@ int main()<br>
       </a>
       </div>
       <div id="collapse10" class="collapse" data-parent="#accordion">
-        <div class="card-body ddown">
+        <div class="card-body ddown"><br> <h3>Definition</h3>
         
-         A <mark>fibonacci series </mark>&nbsp; is a series in which next number is the sum of previous two numbers <br>for example <br><b>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 </b>etc. <br> The first two numbers of fibonacci series are 0 and 1
+         A <mark>fibonacci series </mark>&nbsp; is a series in which next number is the sum of previous two numbers <br>for example <br><b>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 </b>etc. <br> The first two numbers of fibonacci series are 0 and 1 <br>
+         <h3>Algorithm</h3>
+         Start<br>
+Declare variables i, a,b , show<br>
+Initialize the variables, a=0, b=1, and show =0<br>
+Enter the number of terms of Fibonacci series to be printed<br>
+Print First two terms of series<br>
+Use loop for the following steps<br>
+-> show=a+b<br>
+-> a=b<br>
+-> b=show<br>
+-> increase value of i each time by 1<br>
+-> print the value of show<br>
+End<br>
         </div>
       </div>
     </div>
@@ -269,11 +332,21 @@ int main()    <br>
       </a>
       </div>
       <div id="collapse6" class="collapse" data-parent="#accordion">
-        <div class="card-body ddown">
-        
+        <div class="card-body ddown"><br>
+        <h3>Definition</h3>
           The <mark> factorial</mark>, symbolized by an exclamation mark <mark>(!)</mark>, is a quantity defined for all integer s greater than or equal to 0. <br>
 
-For an integer n greater than or equal to 1, the factorial is the product of all integers less than or equal to n but greater than or equal to 1. <br>The factorial value of 0 is defined as equal to 1. The factorial values for negative integers are not defined.
+For an integer n greater than or equal to 1, the factorial is the product of all integers less than or equal to n but greater than or equal to 1. <br>The factorial value of 0 is defined as equal to 1. The factorial values for negative integers are not defined. <br>
+       <h3>Algorithm</h3>
+       <br>
+       <b> Step 1 :</b> Start<br>
+ <b>Start 2 : </b>Read n<br>
+ <b>Start 3 : </b>Initialize counter variable i to 1 and fact to 1<br>
+ <b>Start 4 : </b>if i <= n go to step 5 otherwise goto step 7<br>
+ <b>Start 5 : </b>calculate fact = fact * i<br>
+ <b>Start 6 : </b>increment counter variable i and goto step 4<br>
+ <b>Start 7 :</b> Write fact.<br>
+ <b>Start 8 :</b> Stop<br>
         </div>
       </div>
     </div>
@@ -378,7 +451,7 @@ class Test<br>
       </a>
       </div>
       <div id="collapse18" class="collapse" data-parent="#accordion">
-        <div class="card-body ddown">
+        <div class="card-body ddown"><br> <h3>Definition</h3>
        <mark> Bubble Sort </mark>is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. <br>
        <h4>Algorithm</h4>
             <b>First Pass:</b> <br>
@@ -540,8 +613,10 @@ class BubbleSort<br>
       </a>
       </div>
       <div id="collapse22" class="collapse" data-parent="#accordion">
-        <div class="card-body ddown">
-        We can find largest of 3rd number in an array by using sorting algorithm
+        <div class="card-body ddown"><br>
+        We can find largest of 3rd number in an array by using sorting algorithm <br>If the array contains unique values, then you can sort the array in descending order<br> and then get the element from position (n-1).<br>
+
+If the array does not contain unique values, <br>then you can still sort the array in descending order. <br>There must be a counter and while the algorithm iterates through the sorted elements,<br> the counter increments each time an element that is different from the previous is found. <br>When counter reaches the nth value, then you have the element that you want<br>
           
         </div>
       </div>
